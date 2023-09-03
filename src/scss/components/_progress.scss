@@ -1,0 +1,208 @@
+@layer components {
+    .progress {
+        @apply relative;
+    }
+
+    .progress-bar {
+        @apply w-full flex items-center text-sm;
+    }
+
+    .progress-bar-track {
+        @apply w-full rounded-full bg-slate-200;
+    }
+
+    .progress-bar-label {
+        @apply text-sm font-medium ml-2 text-slate-700;
+    }
+
+    .progress-bar-thumb {
+        @apply h-4 text-[.8em] font-medium max-w-full flex items-center justify-center rounded-[inherit] text-white bg-primary-500;
+    }
+
+    .progress-bar-sm {
+        @apply text-xs;
+    }
+
+    .progress-bar-lg {
+        @apply text-base;
+    }
+
+    .progress-bar-sm .progress-bar-thumb {
+        @apply h-3;
+    }
+
+    .progress-bar-lg .progress-bar-thumb {
+        @apply h-5;
+    }
+
+    .progress-bar-primary .progress-bar-thumb {
+        @apply bg-primary-500;
+    }
+
+    .progress-bar-secondary .progress-bar-thumb {
+        @apply bg-secondary-500;
+    }
+
+    .progress-bar-success .progress-bar-thumb {
+        @apply bg-success-500;
+    }
+
+    .progress-bar-danger .progress-bar-thumb {
+        @apply bg-danger-500;
+    }
+
+    .progress-bar-warning .progress-bar-thumb {
+        @apply bg-warning-500;
+    }
+
+    .progress-bar-info .progress-bar-thumb {
+        @apply bg-info-500;
+    }
+
+    .progress-bar-dark .progress-bar-thumb {
+        @apply bg-dark-500;
+    }
+
+    .progress-bar-striped .progress-bar-thumb {
+        background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+        background-size: 1rem;
+    }
+
+    .progress-bar-striped.progress-bar-sm .progress-bar-thumb {
+        background-size: 0.75rem;
+    }
+
+    .progress-bar-striped.progress-bar-lg .progress-bar-thumb {
+        background-size: 1.25rem;
+    }
+
+    .progress-bar-striped.progress-bar-animated .progress-bar-thumb {
+        animation: 1s linear infinite progress-bar-default-stripes;
+    }
+
+    @keyframes progress-bar-default-stripes {
+        0% {
+            background-position-x: 1rem;
+        }
+    }
+
+    .progress-bar-striped.progress-bar-animated.progress-bar-sm .progress-bar-thumb {
+        animation: 1s linear infinite progress-bar-sm-stripes;
+    }
+
+    @keyframes progress-bar-sm-stripes {
+        0% {
+            background-position-x: 0.75rem;
+        }
+    }
+
+    .progress-bar-striped.progress-bar-animated.progress-bar-lg .progress-bar-thumb {
+        animation: 1s linear infinite progress-bar-lg-stripes;
+    }
+
+    @keyframes progress-bar-lg-stripes {
+        0% {
+            background-position-x: 1.25rem;
+        }
+    }
+
+    .progress-circle {
+        @apply relative max-h-[150px] max-w-[150px] flex items-center justify-center;
+    }
+
+    .progress-circle-label {
+        @apply absolute left-1/2 top-1/2 z-20 -translate-x-1/2 -translate-y-1/2 text-xl font-medium text-primary-500;
+    }
+
+    .progress-circle-sm {
+        @apply max-h-[130px] max-w-[130px];
+    }
+
+    .progress-circle-lg {
+        @apply max-h-[170px] max-w-[170px];
+    }
+
+    .progress-circle-sm .progress-circle-label {
+        @apply text-lg;
+    }
+
+    .progress-circle-lg .progress-circle-label {
+        @apply text-2xl;
+    }
+
+    .progress-circle-primary .progress-circle-label {
+        @apply text-primary-500;
+    }
+
+    .progress-circle-secondary .progress-circle-label {
+        @apply text-secondary-500;
+    }
+
+    .progress-circle-success .progress-circle-label {
+        @apply text-success-500;
+    }
+
+    .progress-circle-danger .progress-circle-label {
+        @apply text-danger-500;
+    }
+
+    .progress-circle-warning .progress-circle-label {
+        @apply text-warning-500;
+    }
+
+    .progress-circle-info .progress-circle-label {
+        @apply text-info-500;
+    }
+
+    .progress-circle-dark .progress-circle-label {
+        @apply text-dark-500;
+    }
+
+    .progress-circle-svg {
+        @apply h-full w-full;
+    }
+
+    .progress-circle-svg > circle {
+        @apply translate-x-[6px] translate-y-[6px] fill-none stroke-[12];
+        stroke-dasharray: 440;
+        stroke-dashoffset: 440;
+        stroke-linecap: round;
+    }
+
+    .progress-circle-svg > circle:nth-child(1) {
+        stroke-dashoffset: 0;
+        @apply stroke-slate-200 dark:stroke-slate-700;
+    }
+
+    .progress-circle-svg > circle:nth-child(2) {
+        @apply stroke-primary-500;
+    }
+
+    .progress-circle-primary .progress-circle-svg > circle:nth-child(2) {
+        @apply stroke-primary-500;
+    }
+
+    .progress-circle-secondary .progress-circle-svg > circle:nth-child(2) {
+        @apply stroke-secondary-500;
+    }
+
+    .progress-circle-success .progress-circle-svg > circle:nth-child(2) {
+        @apply stroke-success-500;
+    }
+
+    .progress-circle-danger .progress-circle-svg > circle:nth-child(2) {
+        @apply stroke-danger-500;
+    }
+
+    .progress-circle-warning .progress-circle-svg > circle:nth-child(2) {
+        @apply stroke-warning-500;
+    }
+
+    .progress-circle-info .progress-circle-svg > circle:nth-child(2) {
+        @apply stroke-info-500;
+    }
+
+    .progress-circle-dark .progress-circle-svg > circle:nth-child(2) {
+        @apply stroke-dark-500;
+    }
+}

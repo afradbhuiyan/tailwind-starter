@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltip - Tailwind UI Elements</title>
+    <link rel="stylesheet" href="../../css/tailwind.css" />
+</head>
+<body>
+    <section class="py-28">
+        <div class="container">
+            <h1 class="mb-5">Components: Tooltip</h1>
+
+            <div class="flex flex-col gap-y-8 divide-y divide-slate-200">
+                <div class="basic-tooltip">
+                    <h5 class="text-2xl font-medium mb-4">
+                        Basic Tooltip
+                    </h5>
+
+                    <button type="button" class="btn btn-primary" data-tooltip="tippy"
+                        data-tippy-content="I am a tippy tooltip!">
+                        Basic Tooltip
+                    </button>
+                </div>
+
+                <div class="tooltip-without-arrow">
+                    <h5 class="text-2xl font-medium mb-4">
+                        Tooltip Without Arrow
+                    </h5>
+
+                    <button type="button" class="btn btn-primary" data-tooltip="tippy" data-tippy-arrow="false"
+                        data-tippy-content="I am a tippy tooltip!">
+                        Arrow False
+                    </button>
+                </div>
+
+                <div class="tooltip-placements">
+                    <h5 class="text-2xl font-medium mb-4">
+                        Tooltip Placements
+                    </h5>
+
+                    <div class="grid grid-cols-1 gap-6 sm:grid-cols-3">
+                        <button type="button" class="btn btn-lg btn-primary" data-tooltip="tippy"
+                            data-tippy-content="I am a tippy tooltip!" data-tippy-arrow="false"
+                            data-tippy-placement="top">
+                            Top
+                        </button>
+                        <button type="button" class="btn btn-lg btn-primary" data-tooltip="tippy"
+                            data-tippy-content="I am a tippy tooltip!" data-tippy-arrow="false"
+                            data-tippy-placement="top-start">
+                            Top Start
+                        </button>
+                        <button type="button" class="btn btn-lg btn-primary" data-tooltip="tippy"
+                            data-tippy-content="I am a tippy tooltip!" data-tippy-arrow="false"
+                            data-tippy-placement="top-end">
+                            Top End
+                        </button>
+                        <button type="button" class="btn btn-lg btn-primary" data-tooltip="tippy"
+                            data-tippy-content="I am a tippy tooltip!" data-tippy-arrow="false"
+                            data-tippy-placement="right">
+                            Right
+                        </button>
+                        <button type="button" class="btn btn-lg btn-primary" data-tooltip="tippy"
+                            data-tippy-content="I am a tippy tooltip!" data-tippy-arrow="false"
+                            data-tippy-placement="right-start">
+                            Right Start
+                        </button>
+                        <button type="button" class="btn btn-lg btn-primary" data-tooltip="tippy"
+                            data-tippy-content="I am a tippy tooltip!" data-tippy-arrow="false"
+                            data-tippy-placement="right-end">
+                            Right End
+                        </button>
+                        <button type="button" class="btn btn-lg btn-primary" data-tooltip="tippy"
+                            data-tippy-content="I am a tippy tooltip!" data-tippy-arrow="false"
+                            data-tippy-placement="bottom">
+                            Bottom
+                        </button>
+                        <button type="button" class="btn btn-lg btn-primary" data-tooltip="tippy"
+                            data-tippy-content="I am a tippy tooltip!" data-tippy-arrow="false"
+                            data-tippy-placement="bottom-start">
+                            Bottom Start
+                        </button>
+                        <button type="button" class="btn btn-lg btn-primary" data-tooltip="tippy"
+                            data-tippy-content="I am a tippy tooltip!" data-tippy-arrow="false"
+                            data-tippy-placement="bottom-end">
+                            Bottom End
+                        </button>
+                        <button type="button" class="btn btn-lg btn-primary" data-tooltip="tippy"
+                            data-tippy-content="I am a tippy tooltip!" data-tippy-arrow="false"
+                            data-tippy-placement="left">
+                            Left
+                        </button>
+                        <button type="button" class="btn btn-lg btn-primary" data-tooltip="tippy"
+                            data-tippy-content="I am a tippy tooltip!" data-tippy-arrow="false"
+                            data-tippy-placement="left-start">
+                            Left Start
+                        </button>
+                        <button type="button" class="btn btn-lg btn-primary" data-tooltip="tippy"
+                            data-tippy-content="I am a tippy tooltip!" data-tippy-arrow="false"
+                            data-tippy-placement="left-end">
+                            Left End
+                        </button>
+                        <button type="button" class="btn btn-lg btn-primary" data-tooltip="tippy"
+                            data-tippy-content="I am a tippy tooltip!" data-tippy-arrow="false"
+                            data-tippy-placement="auto">
+                            Auto
+                        </button>
+                        <button type="button" class="btn btn-lg btn-primary" data-tooltip="tippy"
+                            data-tippy-content="I am a tippy tooltip!" data-tippy-arrow="false"
+                            data-tippy-placement="auto-start">
+                            Auto Start
+                        </button>
+                        <button type="button" class="btn btn-lg btn-primary" data-tooltip="tippy"
+                            data-tippy-content="I am a tippy tooltip!" data-tippy-arrow="false"
+                            data-tippy-placement="auto-end">
+                            Auto End
+                        </button>
+                    </div>
+                </div>
+
+                <div class="tooltip-animation">
+                    <h5 class="text-2xl font-medium mb-4">
+                        Tooltip Animation
+                    </h5>
+
+                    <div class="grid grid-cols-1 gap-6 sm:grid-cols-3">
+                        <button type="button" class="btn btn-lg btn-primary" data-tooltip="tippy"
+                            data-tippy-animation="fade" data-tippy-content="I am a tippy tooltip!">
+                            Fade (Default)
+                        </button>
+                        <button type="button" class="btn btn-lg btn-primary" data-tooltip="tippy"
+                            data-tippy-animation="shift-away" data-tippy-content="I am a tippy tooltip!">
+                            Shift Away
+                        </button>
+                        <button type="button" class="btn btn-lg btn-primary" data-tooltip="tippy"
+                            data-tippy-animation="shift-away-subtle" data-tippy-content="I am a tippy tooltip!">
+                            Shift Away Subtle
+                        </button>
+                        <button type="button" class="btn btn-lg btn-primary" data-tooltip="tippy"
+                            data-tippy-animation="shift-away-extreme" data-tippy-content="I am a tippy tooltip!">
+                            Shift Away Extreme
+                        </button>
+                        <button type="button" class="btn btn-lg btn-primary" data-tooltip="tippy"
+                            data-tippy-animation="shift-toward" data-tippy-content="I am a tippy tooltip!">
+                            Shift Toward
+                        </button>
+                        <button type="button" class="btn btn-lg btn-primary" data-tooltip="tippy"
+                            data-tippy-animation="shift-toward-subtle" data-tippy-content="I am a tippy tooltip!">
+                            Shift Toward Subtle
+                        </button>
+                        <button type="button" class="btn btn-lg btn-primary" data-tooltip="tippy"
+                            data-tippy-animation="shift-toward-extreme" data-tippy-content="I am a tippy tooltip!">
+                            Shift Toward Extreme
+                        </button>
+                        <button type="button" class="btn btn-lg btn-primary" data-tooltip="tippy"
+                            data-tippy-animation="scale" data-tippy-content="I am a tippy tooltip!">
+                            Scale
+                        </button>
+                        <button type="button" class="btn btn-lg btn-primary" data-tooltip="tippy"
+                            data-tippy-animation="scale-subtle" data-tippy-content="I am a tippy tooltip!">
+                            Scale Subtle
+                        </button>
+                        <button type="button" class="btn btn-lg btn-primary" data-tooltip="tippy"
+                            data-tippy-animation="scale-extreme" data-tippy-content="I am a tippy tooltip!">
+                            Scale Extreme
+                        </button>
+                        <button type="button" class="btn btn-lg btn-primary" data-tooltip="tippy"
+                            data-tippy-animation="perspective" data-tippy-content="I am a tippy tooltip!">
+                            Perspective
+                        </button>
+                        <button type="button" class="btn btn-lg btn-primary" data-tooltip="tippy"
+                            data-tippy-animation="perspective-subtle" data-tippy-content="I am a tippy tooltip!">
+                            Perspective Subtle
+                        </button>
+                        <button type="button" class="btn btn-lg btn-primary" data-tooltip="tippy"
+                            data-tippy-animation="perspective-extreme" data-tippy-content="I am a tippy tooltip!">
+                            Perspective Extreme
+                        </button>
+                    </div>
+                </div>
+
+                <div class="html-content-in-tooltip">
+                    <h5 class="text-2xl font-medium mb-4">
+                        HTML Content in Tooltip
+                    </h5>
+
+                    <button type="button" class="btn btn-primary" data-tooltip="tippy"
+                        data-tippy-content="I am a <strong>tippy</strong> tooltip!" data-tippy-allowhtml="true">
+                        HTML Content
+                    </button>
+                </div>
+
+                <div class="tooltip-themes">
+                    <h5 class="text-2xl font-medium mb-4">
+                        Tooltip Themes
+                    </h5>
+
+                    <div class="flex flex-wrap gap-4">
+                        <button type="button" class="btn btn-primary" data-tooltip="tippy"
+                            data-tippy-content="I am a tippy tooltip!" data-tippy-theme="light">
+                            Light
+                        </button>
+                        <button type="button" class="btn btn-primary" data-tooltip="tippy"
+                            data-tippy-content="I am a tippy tooltip!" data-tippy-theme="light-border">
+                            Light Border
+                        </button>
+                        <button type="button" class="btn btn-primary" data-tooltip="tippy"
+                            data-tippy-content="I am a tippy tooltip!" data-tippy-theme="material">
+                            Material
+                        </button>
+                        <button type="button" class="btn btn-primary" data-tooltip="tippy"
+                            data-tippy-content="I am a tippy tooltip!" data-tippy-theme="translucent">
+                            Translucent
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="../../js/components/tooltip.js"></script>
+</body>
+</html>

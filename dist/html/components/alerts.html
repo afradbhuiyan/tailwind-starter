@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerts - Tailwind UI Elements</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="../../css/tailwind.css" />
+</head>
+<body> 
+    <section class="py-28">
+        <div class="container">
+            <h1 class="mb-5">Components: Alerts</h1>
+
+            <div class="flex flex-col gap-y-8 divide-y divide-slate-200">
+                <div class="default-alerts">
+                    <h5 class="text-2xl font-medium mb-4">Alerts</h5>
+
+                    <div class="max-w-4xl">
+                        <div class="alert alert-primary" role="alert">A simple primary alert—check it out!</div>
+                        <div class="alert alert-secondary" role="alert">A simple secondary alert—check it out!</div>
+                        <div class="alert alert-success" role="alert">A simple success alert—check it out!</div>
+                        <div class="alert alert-danger" role="alert">A simple danger alert—check it out!</div>
+                        <div class="alert alert-warning" role="alert">A simple warning alert—check it out!</div>
+                        <div class="alert alert-info" role="alert">A simple info alert—check it out!</div>
+                        <div class="alert alert-dark" role="alert">A simple dark alert—check it out!</div>
+                    </div>
+                </div>
+
+                <div class="bordered-alerts">
+                    <h5 class="text-2xl font-medium mb-4">Bordered Alerts</h5>
+
+                    <div class="max-w-4xl">
+                        <div class="alert alert-bordered alert-primary" role="alert">A simple bordered primary alert—check it out!</div>
+                        <div class="alert alert-bordered alert-secondary" role="alert">A simple bordered secondary alert—check it out!</div>
+                        <div class="alert alert-bordered alert-success" role="alert">A simple bordered success alert—check it out!</div>
+                        <div class="alert alert-bordered alert-danger" role="alert">A simple bordered danger alert—check it out!</div>
+                        <div class="alert alert-bordered alert-warning" role="alert">A simple bordered warning alert—check it out!</div>
+                        <div class="alert alert-bordered alert-info" role="alert">A simple bordered info alert—check it out!</div>
+                        <div class="alert alert-bordered alert-dark" role="alert">A simple bordered dark alert—check it out!</div>
+                    </div>
+                </div>
+
+                <div class="outlined-alerts">
+                    <h5 class="text-2xl font-medium mb-4">Outlined Alerts</h5>
+
+                    <div class="max-w-4xl">
+                        <div class="alert alert-outline-primary alert-dismissible" role="alert">A simple outline primary alert—check it out!</div>
+                        <div class="alert alert-outline-secondary alert-dismissible" role="alert">A simple outline secondary alert—check it out!</div>
+                        <div class="alert alert-outline-success alert-dismissible" role="alert">A simple outline success alert—check it out!</div>
+                        <div class="alert alert-outline-danger alert-dismissible" role="alert">A simple outline danger alert—check it out!</div>
+                        <div class="alert alert-outline-warning alert-dismissible" role="alert">A simple outline warning alert—check it out!</div>
+                        <div class="alert alert-outline-info alert-dismissible" role="alert">A simple outline info alert—check it out!</div>
+                        <div class="alert alert-outline-dark alert-dismissible" role="alert">A simple outline dark alert—check it out!</div>
+                    </div>
+                </div>
+
+                <div class="alert-with-link">
+                    <h5 class="text-2xl font-medium mb-4">Alert With Link</h5>
+
+                    <div class="max-w-4xl">
+                        <div class="alert alert-primary" role="alert">
+                             A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like. 
+                        </div>
+                        <div class="alert alert-secondary" role="alert">
+                             A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like. 
+                        </div>
+                        <div class="alert alert-success" role="alert">
+                             A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like. 
+                        </div>
+                        <div class="alert alert-danger" role="alert">
+                             A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like. 
+                        </div>
+                        <div class="alert alert-warning" role="alert">
+                             A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like. 
+                        </div>
+                        <div class="alert alert-info" role="alert">
+                             A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like. 
+                        </div>
+                        <div class="alert alert-dark" role="alert">
+                             A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like. 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="alert-with-additional-content">
+                    <h5 class="text-2xl font-medium mb-4">Alert With Additional Content</h5>
+
+                    <div class="max-w-4xl">
+                        <div class="alert alert-primary" role="alert">
+                            <h4 class="alert-heading mb-4">Well done!</h4>
+                            <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="alert-with-icon">
+                    <h5 class="text-2xl font-medium mb-4">Alert With Icon</h5>
+
+                    <div class="max-w-4xl">
+                        <div class="alert alert-primary" role="alert">
+                            <i class="fas fa-exclamation-triangle mr-1"></i>
+                            An example alert with an icon
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dismissable-alerts">
+                    <h5 class="text-2xl font-medium mb-4">Dismissable Alerts</h5>
+
+                    <div class="max-w-4xl">
+                        <div class="alert alert-primary alert-dismissible" role="alert">
+                            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                            <button type="button" class="btn-close" data-dismiss="alert">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+
+                        <div class="alert alert-secondary alert-dismissible" role="alert">
+                            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                            <button type="button" class="btn-close" data-dismiss="alert">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+
+                        <div class="alert alert-success alert-dismissible" role="alert">
+                            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                            <button type="button" class="btn-close" data-dismiss="alert">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+
+                        <div class="alert alert-danger alert-dismissible" role="alert">
+                            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                            <button type="button" class="btn-close" data-dismiss="alert">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+
+                        <div class="alert alert-warning alert-dismissible" role="alert">
+                            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                            <button type="button" class="btn-close" data-dismiss="alert">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+
+                        <div class="alert alert-info alert-dismissible" role="alert">
+                            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                            <button type="button" class="btn-close" data-dismiss="alert">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+
+                        <div class="alert alert-dark alert-dismissible" role="alert">
+                            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                            <button type="button" class="btn-close" data-dismiss="alert">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dismissable-outline-alerts">
+                    <h5 class="text-2xl font-medium mb-4">Dismissable Outline Alerts</h5>
+
+                    <div class="max-w-4xl">
+                        <div class="alert alert-outline-primary alert-dismissible" role="alert">
+                            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                            <button type="button" class="btn-close" data-dismiss="alert">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+
+                        <div class="alert alert-outline-secondary alert-dismissible" role="alert">
+                            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                            <button type="button" class="btn-close" data-dismiss="alert">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+
+                        <div class="alert alert-outline-success alert-dismissible" role="alert">
+                            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                            <button type="button" class="btn-close" data-dismiss="alert">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+
+                        <div class="alert alert-outline-danger alert-dismissible" role="alert">
+                            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                            <button type="button" class="btn-close" data-dismiss="alert">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+
+                        <div class="alert alert-outline-warning alert-dismissible" role="alert">
+                            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                            <button type="button" class="btn-close" data-dismiss="alert">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+
+                        <div class="alert alert-outline-info alert-dismissible" role="alert">
+                            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                            <button type="button" class="btn-close" data-dismiss="alert">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+
+                        <div class="alert alert-outline-dark alert-dismissible" role="alert">
+                            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                            <button type="button" class="btn-close" data-dismiss="alert">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dismissable-bordered-alerts">
+                    <h5 class="text-2xl font-medium mb-4">Dismissable Bordered Alerts</h5>
+
+                    <div class="max-w-4xl">
+                        <div class="alert alert-bordered alert-primary alert-dismissible" role="alert">
+                            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                            <button type="button" class="btn-close" data-dismiss="alert">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+
+                        <div class="alert alert-bordered alert-secondary alert-dismissible" role="alert">
+                            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                            <button type="button" class="btn-close" data-dismiss="alert">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+
+                        <div class="alert alert-bordered alert-success alert-dismissible" role="alert">
+                            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                            <button type="button" class="btn-close" data-dismiss="alert">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+
+                        <div class="alert alert-bordered alert-danger alert-dismissible" role="alert">
+                            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                            <button type="button" class="btn-close" data-dismiss="alert">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+
+                        <div class="alert alert-bordered alert-warning alert-dismissible" role="alert">
+                            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                            <button type="button" class="btn-close" data-dismiss="alert">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+
+                        <div class="alert alert-bordered alert-info alert-dismissible" role="alert">
+                            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                            <button type="button" class="btn-close" data-dismiss="alert">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+
+                        <div class="alert alert-bordered alert-dark alert-dismissible" role="alert">
+                            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                            <button type="button" class="btn-close" data-dismiss="alert">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../../js/components/alerts.js"></script>
+</body>
+</html>

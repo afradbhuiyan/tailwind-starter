@@ -1,0 +1,9 @@
+@layer base {
+    .img-fluid {
+        @apply max-w-full h-auto;
+    }
+
+    .img-thumbnail {
+        @apply max-w-full h-auto p-1 rounded-md bg-white border border-gray-200;
+    }
+}

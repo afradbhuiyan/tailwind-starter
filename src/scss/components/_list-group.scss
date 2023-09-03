@@ -1,0 +1,80 @@
+@layer components {
+
+    .list-group {
+        @apply flex flex-col pl-0 mb-0 rounded
+        ;
+    }   
+
+    .list-group-flush {
+        @apply rounded-none;
+    }   
+
+    .list-group-flush > .list-group-item {
+        @apply border-l-0 border-r-0 border-t-0;
+    }
+
+    .list-group-horizontal {
+        @apply flex-row;
+    }   
+
+    .list-group-horizontal > .list-group-item + .list-group-item {
+        @apply border-t border-l-0;
+    }
+
+    .list-group-item {
+        @apply relative block text-left no-underline py-2 px-4 border border-slate-200 text-slate-700 bg-white;
+    }   
+
+    .list-group-item:first-child {
+        @apply rounded-tl-[inherit] rounded-tr-[inherit];
+    }
+
+    .list-group-item:last-child {
+        @apply rounded-bl-[inherit] rounded-br-[inherit];
+    }
+
+    .list-group-item + .list-group-item {
+        @apply border-t-0;
+    }
+
+    .list-group-item-action {
+        @apply w-full hover:bg-slate-50 hover:no-underline focus:bg-slate-50 focus:no-underline;
+    }   
+
+    .list-group-item-primary {
+        @apply bg-primary-100 border-primary-100 text-primary;
+    }
+
+    .list-group-item-secondary {
+        @apply bg-secondary-100 border-secondary-100 text-secondary;
+    }
+
+    .list-group-item-success {
+        @apply bg-success-100 border-success-100 text-success;
+    }
+
+    .list-group-item-danger {
+        @apply bg-danger-100 border-danger-100 text-danger;
+    }
+
+    .list-group-item-warning {
+        @apply bg-warning-100 border-warning-100 text-warning;
+    }
+
+    .list-group-item-info {
+        @apply bg-info-100 border-info-100 text-info;
+    }
+
+    .list-group-item-dark {
+        @apply bg-dark-100 border-dark-100 text-dark;
+    }
+
+    .list-group-item.active {
+        @apply z-[2] border-primary bg-primary text-white;
+    }
+
+    .list-group-item.disabled,
+    .list-group-item:disabled {
+        @apply text-slate-300 pointer-events-none;
+    }   
+}

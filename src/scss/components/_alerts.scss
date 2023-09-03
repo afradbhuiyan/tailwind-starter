@@ -1,0 +1,133 @@
+@layer components {
+    .alert {
+        @apply relative p-4 mb-4 text-inherit border border-transparent bg-transparent rounded;
+    }
+
+    .alert-bordered {
+        @apply rounded-none border-l-[3px];
+    }
+
+    .alert-heading {
+        @apply text-inherit;
+    }
+
+    .alert-dismissible .btn-close {
+        @apply absolute top-0 right-0 z-[2] p-4;
+    }
+
+    .alert-link {
+        @apply underline font-semibold transition-colors duration-150 ease-in-out;
+    }
+
+    .alert-primary {
+        @apply border-primary-200 bg-primary-100 text-primary;
+    }
+
+    .alert-secondary {
+        @apply border-secondary-200 bg-secondary-100 text-secondary;
+    }
+
+    .alert-success {
+        @apply border-success-200 bg-success-100 text-success;
+    }
+
+    .alert-danger {
+        @apply border-danger-200 bg-danger-100 text-danger;
+    }
+
+    .alert-warning {
+        @apply border-warning-200 bg-warning-100 text-warning;
+    }
+
+    .alert-info {
+        @apply border-info-200 bg-info-100 text-info;
+    }
+
+    .alert-dark {
+        @apply border-dark-200 bg-dark-100 text-dark;
+    }
+
+    .alert-primary.alert-bordered {
+        @apply border-l-primary;
+    }
+
+    .alert-secondary.alert-bordered {
+        @apply border-l-secondary;
+    }
+
+    .alert-success.alert-bordered {
+        @apply border-l-success;
+    }
+
+    .alert-danger.alert-bordered {
+        @apply border-l-danger;
+    }
+
+    .alert-warning.alert-bordered {
+        @apply border-l-warning;
+    }
+
+    .alert-info.alert-bordered {
+        @apply border-l-info;
+    }
+
+    .alert-dark.alert-bordered {
+        @apply border-l-dark;
+    }
+
+    .alert-outline-primary {
+        @apply border-primary text-primary;
+    }
+
+    .alert-outline-secondary {
+        @apply border-secondary text-secondary;
+    }
+
+    .alert-outline-success {
+        @apply border-success text-success;
+    }
+
+    .alert-outline-danger {
+        @apply border-danger text-danger;
+    }
+
+    .alert-outline-warning {
+        @apply border-warning text-warning;
+    }
+
+    .alert-outline-info {
+        @apply border-info text-info;
+    }
+
+    .alert-outline-dark {
+        @apply border-dark text-dark;
+    }
+
+    .alert[class*="primary"] .alert-link {
+        @apply hover:text-primary-800 focus:text-primary-800;
+    }
+
+    .alert[class*="secondary"] .alert-link {
+        @apply hover:text-secondary-800 focus:text-secondary-800;
+    }
+
+    .alert[class*="success"] .alert-link {
+        @apply hover:text-success-800 focus:text-success-800;
+    }
+
+    .alert[class*="danger"] .alert-link {
+        @apply hover:text-danger-800 focus:text-danger-800;
+    }
+
+    .alert[class*="warning"] .alert-link {
+        @apply hover:text-warning-800 focus:text-warning-800;
+    }
+
+    .alert[class*="info"] .alert-link {
+        @apply hover:text-info-800 focus:text-info-800;
+    }
+
+    .alert[class*="dark"] .alert-link {
+        @apply hover:text-dark-800 focus:text-dark-800;
+    }
+}

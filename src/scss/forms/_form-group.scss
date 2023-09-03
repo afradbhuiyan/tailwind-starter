@@ -1,0 +1,5 @@
+@layer components {
+    .form-group:not(:last-child) {
+        @apply mb-4;
+    }
+}

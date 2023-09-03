@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select - Tailwind UI Elements</title>
+    <link rel="stylesheet" href="../../css/tailwind.css" />
+</head>
+<body>
+    <section class="py-28">
+        <div class="container">
+            <h1 class="mb-5">Forms: Select</h1>
+
+            <div class="flex flex-col gap-y-8 divide-y divide-slate-200">
+                <div class="basic-select">
+                    <h5 class="text-2xl font-medium mb-4">Basic Select</h5> 
+
+                    <select class="form-select" name="gender">
+                        <option value="">Select one</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>              
+
+                <div class="select-with-optgroup">
+                    <h5 class="text-2xl font-medium mb-4">Select with optgroup</h5> 
+
+                    <select class="form-select" name="timezone">
+                        <optgroup label="Alaskan/Hawaiian Time Zone">
+                            <option value="AK">Alaska</option>
+                            <option value="HI">Hawaii</option>
+                        </optgroup>
+
+                        <optgroup label="Pacific Time Zone">
+                            <option value="CA">California</option>
+                            <option value="NV">Nevada</option>
+                            <option value="OR">Oregon</option>
+                            <option value="WA">Washington</option>
+                        </optgroup>
+                    </select>
+                </div>              
+
+                <div class="select-sizes">
+                    <h5 class="text-2xl font-medium mb-4">Select Sizes</h5>   
+
+                    <div class="flex flex-wrap items-center gap-4">
+                        <select  class="form-select form-select-sm" name="gender">
+                            <option value="">Select one</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+
+                        <select  class="form-select" name="gender">
+                            <option value="">Select one</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+
+                        <select  class="form-select form-select-lg" name="gender">
+                            <option value="">Select one</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                </div>   
+
+                <div class="disabled-select">
+                    <h5 class="text-2xl font-medium mb-4">Disabled Select</h5>   
+                    
+                    <select class="form-select" name="gender" disabled>
+                        <option value="">Select one</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+
+                <div class="disabled-select-option">
+                    <h5 class="text-2xl font-medium mb-4">Disabled Select Option</h5>   
+                    
+                    <select class="form-select" name="gender">
+                        <option value="">Select one</option>
+                        <option value="male">Male</option>
+                        <option value="female" disabled>Female</option>
+                    </select>
+                </div>    
+                
+                <div class="searchable-select">
+                    <h5 class="text-2xl font-medium mb-4">Searchable Select</h5> 
+
+                    <select class="form-select form-select2" name="language">
+                        <option value="">Select language</option>
+                        <option value="bangla">Bangla</option>
+                        <option value="english">English</option>
+                        <option value="hindi">Hindi</option>
+                        <option value="urdu">Urdu</option>
+                    </select>
+                </div>
+
+                <div class="multiple-select">
+                    <h5 class="text-2xl font-medium mb-4">Multiple Select</h5> 
+
+                    <select class="form-select form-select2" name="languages[]" multiple>
+                        <option value="bangla">Bangla</option>
+                        <option value="english">English</option>
+                        <option value="hindi">Hindi</option>
+                        <option value="urdu">Urdu</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.form-select2').each(function (index, select) {
+                $(select).select2();
+            });
+        });
+    </script>
+</body>
+</html>

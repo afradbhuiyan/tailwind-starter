@@ -1,0 +1,49 @@
+@layer components {
+    .form-check {
+        @apply flex items-center gap-x-1.5;
+    }
+
+    .form-check-input {
+        @apply w-4 h-4 border-slate-300 bg-transparent focus:ring-2 disabled:pointer-events-none disabled:opacity-60;
+    }
+
+    .form-check-input[type="checkbox"] {
+        @apply rounded;
+    }
+
+    .form-check-input-sm {
+        @apply w-3.5 h-3.5;
+    }
+
+    .form-check-input-lg {
+        @apply w-5 h-5;
+    }
+
+    .form-check-input-primary {
+        @apply text-primary  focus:ring-primary;
+    }
+
+    .form-check-input-secondary {
+        @apply text-secondary  focus:ring-secondary;
+    }
+
+    .form-check-input-success {
+        @apply text-success  focus:ring-success;
+    }
+
+    .form-check-input-danger {
+        @apply text-danger  focus:ring-danger;
+    }
+
+    .form-check-input-warning {
+        @apply text-warning  focus:ring-warning;
+    }
+
+    .form-check-input-info {
+        @apply text-info  focus:ring-info;
+    }
+
+    .form-check-input-dark {
+        @apply text-dark  focus:ring-dark;
+    }
+}

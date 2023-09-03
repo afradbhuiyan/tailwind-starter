@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offcanvas - Tailwind UI Elements</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="../../css/tailwind.css" />
+</head>
+<body> 
+    <section class="py-28">
+        <div class="container">
+            <h1 class="mb-5">Components: Offcanvas</h1>
+
+            <div class="flex flex-col gap-y-8 divide-y divide-slate-200">
+                <div class="basic-offcanvas">
+                    <h5 class="text-2xl font-medium mb-4">Basic Offcanvas</h5>    
+
+                    <button class="btn btn-primary" type="button" data-toggle="offcanvas" data-target="#offcanvas-basic">
+                        Basic offcanvas
+                    </button>
+
+                    <div id="offcanvas-basic" class="offcanvas">
+                        <div class="offcanvas-header">
+                            <h5>Basic offcanvas</h5>
+                            <button type="button" class="btn-close" data-dismiss="offcanvas">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <p class="text-sm text-slate-600 dark:text-slate-300">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt iure tempora a blanditiis
+                                inventore voluptatibus cupiditate, consectetur maiores architecto deleniti omnis voluptatem
+                                facilis officiis odio harum quasi quae atque necessitatibus.
+                            </p>
+                        </div>
+                        <div class="offcanvas-footer">
+                            <div class="flex justify-end gap-2">
+                                <button type="button" class="btn btn-secondary" data-dismiss="offcanvas">
+                                    <span>Cancel</span>
+                                </button>
+                    
+                                <button type="button" class="btn btn-primary">
+                                    <span>Confirm</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offcanvas-without-backdrop">
+                    <h5 class="text-2xl font-medium mb-4">Offcanvas without backdrop</h5>    
+
+                    <button class="btn btn-primary" type="button" data-toggle="offcanvas" data-target="#offcanvas-without-backdrop">
+                        Offcanvas without backdrop
+                    </button>
+
+                    <div id="offcanvas-without-backdrop" class="offcanvas" data-backdrop="false">
+                        <div class="offcanvas-header">
+                            <h5>Offcanvas Without Backdrop</h5>
+                            <button type="button" class="btn-close" data-dismiss="offcanvas">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <p class="text-sm text-slate-600 dark:text-slate-300">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt iure tempora a blanditiis
+                                inventore voluptatibus cupiditate, consectetur maiores architecto deleniti omnis voluptatem
+                                facilis officiis odio harum quasi quae atque necessitatibus.
+                            </p>
+                        </div>
+                        <div class="offcanvas-footer">
+                            <div class="flex justify-end gap-2">
+                                <button type="button" class="btn btn-secondary" data-dismiss="offcanvas">
+                                    <span>Cancel</span>
+                                </button>
+                    
+                                <button type="button" class="btn btn-primary">
+                                    <span>Confirm</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offcanvas-with-static-backdrop">
+                    <h5 class="text-2xl font-medium mb-4">Offcanvas With Static Backdrop</h5>    
+
+                    <button class="btn btn-primary" type="button" data-toggle="offcanvas" data-target="#offcanvas-with-static-backdrop">
+                        Offcanvas with static backdrop
+                    </button>
+
+                    <div id="offcanvas-with-static-backdrop" class="offcanvas" data-backdrop="static">
+                        <div class="offcanvas-header">
+                            <h5>Static Backdrop</h5>
+                            <button type="button" class="btn-close" data-dismiss="offcanvas">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <p class="text-sm text-slate-600 dark:text-slate-300">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt iure tempora a blanditiis
+                                inventore voluptatibus cupiditate, consectetur maiores architecto deleniti omnis voluptatem
+                                facilis officiis odio harum quasi quae atque necessitatibus.
+                            </p>
+                        </div>
+                        <div class="offcanvas-footer">
+                            <div class="flex justify-end gap-2">
+                                <button type="button" class="btn btn-secondary" data-dismiss="offcanvas">
+                                    <span>Cancel</span>
+                                </button>
+                    
+                                <button type="button" class="btn btn-primary">
+                                    <span>Confirm</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offcanvas-placements">
+                    <h5 class="text-2xl font-medium mb-4">Offcanvas Placements</h5>    
+
+                    <div class="flex flex-wrap gap-4">
+                        <button class="btn btn-primary" type="button" data-toggle="offcanvas" data-target="#offcanvas-left">
+                            Offcanvas Left (Default)
+                        </button>
+
+                        <button class="btn btn-primary" type="button" data-toggle="offcanvas" data-target="#offcanvas-right">
+                            Offcanvas Right
+                        </button>
+
+                        <button class="btn btn-primary" type="button" data-toggle="offcanvas" data-target="#offcanvas-top">
+                            Offcanvas Top
+                        </button>
+
+                        <button class="btn btn-primary" type="button" data-toggle="offcanvas" data-target="#offcanvas-bottom">
+                            Offcanvas Bottom
+                        </button>
+                    </div>
+
+                    <div id="offcanvas-left" class="offcanvas">
+                        <div class="offcanvas-header">
+                            <h5>Drawer Left (Default)</h5>
+                            <button type="button" class="btn-close" data-dismiss="offcanvas">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <p class="text-sm text-slate-600 dark:text-slate-300">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt iure tempora a blanditiis
+                                inventore voluptatibus cupiditate, consectetur maiores architecto deleniti omnis voluptatem
+                                facilis officiis odio harum quasi quae atque necessitatibus.
+                            </p>
+                        </div>
+                        <div class="offcanvas-footer">
+                            <div class="flex justify-end gap-2">
+                                <button type="button" class="btn btn-secondary" data-dismiss="offcanvas">
+                                    <span>Cancel</span>
+                                </button>
+                    
+                                <button type="button" class="btn btn-primary">
+                                    <span>Confirm</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="offcanvas-right" class="offcanvas offcanvas-right">
+                        <div class="offcanvas-header">
+                            <h5>Drawer Right</h5>
+                            <button type="button" class="btn-close" data-dismiss="offcanvas">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <p class="text-sm text-slate-600 dark:text-slate-300">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt iure tempora a blanditiis
+                                inventore voluptatibus cupiditate, consectetur maiores architecto deleniti omnis voluptatem
+                                facilis officiis odio harum quasi quae atque necessitatibus.
+                            </p>
+                        </div>
+                        <div class="offcanvas-footer">
+                            <div class="flex justify-end gap-2">
+                                <button type="button" class="btn btn-secondary" data-dismiss="offcanvas">
+                                    <span>Cancel</span>
+                                </button>
+                    
+                                <button type="button" class="btn btn-primary">
+                                    <span>Confirm</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="offcanvas-top" class="offcanvas offcanvas-top">
+                        <div class="offcanvas-header">
+                            <h5>Drawer Top</h5>
+                            <button type="button" class="btn-close" data-dismiss="offcanvas">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <p class="text-sm text-slate-600 dark:text-slate-300">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt iure tempora a blanditiis
+                                inventore voluptatibus cupiditate, consectetur maiores architecto deleniti omnis voluptatem
+                                facilis officiis odio harum quasi quae atque necessitatibus.
+                            </p>
+                        </div>
+                        <div class="offcanvas-footer">
+                            <div class="flex justify-end gap-2">
+                                <button type="button" class="btn btn-secondary" data-dismiss="offcanvas">
+                                    <span>Cancel</span>
+                                </button>
+                    
+                                <button type="button" class="btn btn-primary">
+                                    <span>Confirm</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="offcanvas-bottom" class="offcanvas offcanvas-bottom">
+                        <div class="offcanvas-header">
+                            <h5>Drawer Bottom</h5>
+                            <button type="button" class="btn-close" data-dismiss="offcanvas">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <p class="text-sm text-slate-600 dark:text-slate-300">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt iure tempora a blanditiis
+                                inventore voluptatibus cupiditate, consectetur maiores architecto deleniti omnis voluptatem
+                                facilis officiis odio harum quasi quae atque necessitatibus.
+                            </p>
+                        </div>
+                        <div class="offcanvas-footer">
+                            <div class="flex justify-end gap-2">
+                                <button type="button" class="btn btn-secondary" data-dismiss="offcanvas">
+                                    <span>Cancel</span>
+                                </button>
+                    
+                                <button type="button" class="btn btn-primary">
+                                    <span>Confirm</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="disabled-offcanvas-keypress">
+                    <h5 class="text-2xl font-medium mb-4">Disabled Offcanvas Keypress</h5>    
+
+                    <button class="btn btn-primary" type="button" data-toggle="offcanvas" data-target="#disable-keypress-offcanvas">
+                        Disabled Offcanvas Keypress
+                    </button>
+
+                    <div id="disable-keypress-offcanvas" class="offcanvas">
+                        <div class="offcanvas-header">
+                            <h5>Disable Drawer Keypress</h5>
+                            <button type="button" class="btn-close" data-dismiss="offcanvas">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <p class="text-sm text-slate-600 dark:text-slate-300">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt iure tempora a blanditiis
+                                inventore voluptatibus cupiditate, consectetur maiores architecto deleniti omnis voluptatem
+                                facilis officiis odio harum quasi quae atque necessitatibus.
+                            </p>
+                        </div>
+                        <div class="offcanvas-footer">
+                            <div class="flex justify-end gap-2">
+                                <button type="button" class="btn btn-secondary" data-dismiss="offcanvas">
+                                    <span>Cancel</span>
+                                </button>
+                    
+                                <button type="button" class="btn btn-primary">
+                                    <span>Confirm</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../../js/components/offcanvas.js"></script>
+</body>
+</html>

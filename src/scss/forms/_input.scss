@@ -1,0 +1,55 @@
+@layer components {
+    .form-input {
+        @apply w-full inline-block appearance-none rounded border border-slate-300 bg-transparent text-base text-slate-700 placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:border-primary focus:ring-primary disabled:pointer-events-none disabled:opacity-60 disabled:bg-slate-100 disabled:text-slate-400 disabled:placeholder:text-slate-400;
+    }   
+
+    textarea.form-input {
+        @apply min-h-[2.5rem];
+    }
+
+    .form-input:not(.form-input[type='file']) {
+        @apply px-4 py-2;
+    }
+    
+    .form-input[type='file'] {
+        @apply p-0 overflow-hidden focus-within:border-primary focus-within:ring-1 focus-within:ring-primary;
+    }
+
+    .form-input[type='file']::file-selector-button {
+        @apply px-4 py-2 mr-2 rounded-none pointer-events-none border-0 border-solid border-slate-300 bg-slate-100/50 text-slate-700;    
+        
+        font-family: inherit;
+        appearance: button;
+        -webkit-appearance: button;
+        border-inline-end-width: 1px;
+    }
+    
+    .form-input[type='file']:not(:disabled),
+    .form-input[type='file']:not(:read-only) {
+        @apply cursor-pointer;
+    }
+
+    .form-input-sm {
+        @apply text-sm;
+    }
+
+    .form-input-sm:not(.form-input[type='file']) {
+        @apply px-4 py-1.5;
+    }
+    
+    .form-input-sm[type='file']::file-selector-button {
+        @apply px-4 py-1.5 text-sm;
+    }
+
+    .form-input-lg {
+        @apply text-lg;
+    }
+
+    .form-input-lg:not(.form-input[type='file']) {
+        @apply px-6 py-3;
+    }
+    
+    .form-input-lg[type='file']::file-selector-button {
+        @apply px-6 py-3 text-lg;
+    }
+}

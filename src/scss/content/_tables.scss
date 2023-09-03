@@ -1,0 +1,69 @@
+@layer components {
+    .table {
+        --table-bg: theme(colors.white);
+        --table-thead-color: theme(colors.slate.700);
+        --table-tbody-color: theme(colors.slate.600);
+        --table-border-color: theme(colors.slate.200);
+        --table-striped-bg: theme(colors.slate.50);
+        --table-hover-bg: theme(colors.slate.50);
+        @apply w-full overflow-hidden rounded border-[var(--table-border-color)];
+   }
+
+    .table thead, 
+    .table tbody, 
+    .table tfoot, 
+    .table td 
+    .table th, 
+    .table tr {
+        @apply border-0 border-solid border-inherit;
+   }
+
+    .table th {
+        @apply font-semibold text-[var(--table-thead-color)];
+   }
+
+    .table td {
+        @apply font-normal text-[var(--table-tbody-color)];
+   }
+
+    .table > thead > tr:first-child > *, 
+    .table > tbody > tr:not(:last-child) > * {
+        @apply border-b;
+   }
+
+    .table > tfoot > tr:first-child > * {
+        @apply border-t;
+   }
+
+    .table > :not(caption) > * > * {
+        @apply bg-[var(--table-bg)] px-6 py-3 text-left text-base;
+   }
+
+    .table-striped > tbody > tr:nth-of-type(odd) > * {
+        @apply bg-[var(--table-striped-bg)];
+   }
+
+    .table-hover > tbody > tr:hover > * {
+        @apply bg-[var(--table-hover-bg)];
+   }
+
+    .table-bordered {
+        @apply border-separate border-spacing-0 border shadow-none;
+   }
+
+   .table-bordered > :not(caption) > * > *:not(:last-child) {
+        @apply border-r;
+   }
+
+    .table-borderless > :not(caption) > * > * {
+        border-width: 0 !important;
+   }
+
+    .table-responsive {
+        @apply overflow-x-auto rounded;
+   }
+   
+    .table-compact > :not(caption) > * > * {
+        @apply px-4 py-2;
+   }
+}

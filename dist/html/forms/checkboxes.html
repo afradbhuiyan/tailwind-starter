@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox - Tailwind UI Elements</title>
+    <link rel="stylesheet" href="../../css/tailwind.css" />
+
+</head>
+<body>
+    <section class="py-28">
+        <div class="container">
+            <h1 class="mb-5">Forms: Checkbox & Radio</h1>
+            
+            <div class="flex flex-col gap-y-8 divide-y divide-slate-200">
+                <div class="basic-checkbox">
+                    <h5 class="text-2xl font-medium mb-4">Basic Checkbox</h5>    
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="basic-checkbox-option-1" checked>
+                        <label class="form-label" for="basic-checkbox-option-1">Option 1</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="basic-checkbox-option-2">
+                        <label class="form-label" for="basic-checkbox-option-2">Option 2</label>
+                    </div>
+                </div> 
+
+                <div class="checkbox-sizes">
+                    <h5 class="text-2xl font-medium mb-4">Checkbox Sizes</h5>    
+
+                    <div class="form-check">
+                        <input class="form-check-input form-check-input-sm" type="checkbox" id="checkbox-sm" checked>
+                        <label class="form-label form-label-sm" for="checkbox-sm">Small</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="checkbox-default">
+                        <label class="form-label" for="checkbox-default">Default</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input form-check-input-lg" type="checkbox" id="checkbox-lg">
+                        <label class="form-label form-label-lg" for="checkbox-lg">Large</label>
+                    </div>
+                </div>
+
+                <div class="checkbox-colors">
+                    <h5 class="text-2xl font-medium mb-4">Checkbox colors</h5>    
+
+                    <div class="flex flex-wrap gap-4">
+                        <div class="form-check">
+                            <input class="form-check-input form-check-input-primary" type="checkbox" id="checkbox-primary" checked>
+                            <label class="form-label" for="checkbox-primary">Primary</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input form-check-input-secondary" type="checkbox" id="checkbox-secondary" checked>
+                            <label class="form-label" for="checkbox-secondary">Secondary</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input form-check-input-success" type="checkbox" id="checkbox-success" checked>
+                            <label class="form-label" for="checkbox-success">Success</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input form-check-input-danger" type="checkbox" id="checkbox-danger" checked>
+                            <label class="form-label" for="checkbox-danger">Danger</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input form-check-input-warning" type="checkbox" id="checkbox-warning" checked>
+                            <label class="form-label" for="checkbox-warning">Warning</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input form-check-input-info" type="checkbox" id="checkbox-info" checked>
+                            <label class="form-label" for="checkbox-info">Info</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input form-check-input-dark" type="checkbox" id="checkbox-dark" checked>
+                            <label class="form-label" for="checkbox-dark">Dark</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="checkbox-disabled">
+                    <h5 class="text-2xl font-medium mb-4">Checkbox Disabled</h5>    
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="checkbox-disabled-option-1" checked disabled>
+                        <label class="form-label disabled" for="checkbox-disabled-option-1">Option 1</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="checkbox-disabled-option-2" disabled>
+                        <label class="form-label disabled" for="checkbox-disabled-option-2">Option 2</label>
+                    </div>
+                </div>
+
+                <div class="basic-radio">
+                    <h5 class="text-2xl font-medium mb-4">Basic Radio</h5>    
+
+                    <div class="flex flex-wrap items-center gap-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="basic-radio-option" id="basic-radio-option-1" checked>
+                            <label class="form-label" for="basic-radio-option-1">Option 1</label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="basic-radio-option" id="basic-radio-option-2">
+                            <label class="form-label" for="basic-radio-option-2">Option 2</label>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="radio-sizes">
+                    <h5 class="text-2xl font-medium mb-4">Radio Sizes</h5>    
+
+                    <div class="flex flex-wrap items-center gap-4">
+                        <div class="form-check">
+                            <input class="form-check-input form-check-input-sm" type="radio" name="radio-size" id="radio-sm" checked>
+                            <label class="form-label form-label-sm" for="radio-sm">Small</label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radio-size" id="radio-default">
+                            <label class="form-label" for="radio-default">Default</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input form-check-input-lg" type="radio" name="radio-size" id="radio-lg">
+                            <label class="form-label form-label-lg" for="radio-lg">Large</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="radio-colors">
+                    <h5 class="text-2xl font-medium mb-4">Radio colors</h5>    
+
+                    <div class="flex flex-wrap gap-4">
+                        <div class="form-check">
+                            <input class="form-check-input form-check-input-primary" type="radio" name="radio-color" id="radio-primary" checked>
+                            <label class="form-label" for="radio-primary">Primary</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input form-check-input-secondary" type="radio" name="radio-color" id="radio-secondary">
+                            <label class="form-label" for="radio-secondary">Secondary</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input form-check-input-success" type="radio" name="radio-color" id="radio-success">
+                            <label class="form-label" for="radio-success">Success</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input form-check-input-danger" type="radio" name="radio-color" id="radio-danger">
+                            <label class="form-label" for="radio-danger">Danger</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input form-check-input-warning" type="radio" name="radio-color" id="radio-warning">
+                            <label class="form-label" for="radio-warning">Warning</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input form-check-input-info" type="radio" name="radio-color" id="radio-info">
+                            <label class="form-label" for="radio-info">Info</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input form-check-input-dark" type="radio" name="radio-color" id="radio-dark">
+                            <label class="form-label" for="radio-dark">Dark</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="radio-disabled">
+                    <h5 class="text-2xl font-medium mb-4">Radio Disabled</h5>    
+
+                    <div class="flex flex-wrap items-center gap-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="radio-disabled-option-1" checked disabled>
+                            <label class="form-label disabled" for="radio-disabled-option-1">Option 1</label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="radio-disabled-option-2" disabled>
+                            <label class="form-label disabled" for="radio-disabled-option-2">Option 2</label>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+        </div>
+    </section>
+</body>
+</html>

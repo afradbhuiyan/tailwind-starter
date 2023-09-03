@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdowns - Tailwind UI Elements</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="../../css/tailwind.css" />
+</head>
+<body> 
+
+    <section class="py-28">
+        <div class="container">
+            <h1 class="mb-5">Components: Dropdowns</h1>
+
+            <div class="flex flex-col gap-y-8 divide-y divide-slate-200">
+                <div class="basic-dropdown">
+                    <h5 class="text-2xl font-medium mb-4">Basic Dropdown</h5>
+
+                    <div class="flex flex-wrap items-center gap-4">
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-secondary dropdown-toggle">
+                                Dropdown Button
+                                <i class="fas fa-angle-down mt-1.5"></i>
+                            </button>
+
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item">
+                                    <a href="#" class="w-full">Action</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#" class="w-full">Another Action</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#" class="w-full">Something else here</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown">
+                            <a href="#" class="btn btn-secondary dropdown-toggle" role="button">
+                                Dropdown link
+                                <i class="fas fa-angle-down mt-1.5"></i>
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item">
+                                    <a href="#" class="w-full">Action</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#" class="w-full">Another Action</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#" class="w-full">Something else here</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dropdown-buttons">
+                    <h5 class="text-2xl font-medium mb-4">Dropdown Buttons</h5>
+
+                    <div class="space-y-6">
+                        <div class="flex flex-wrap items-center gap-4">
+                            <div class="dropdown">
+                                <button type="button" class="btn btn-primary dropdown-toggle">
+                                    Primary
+                                    <i class="fas fa-angle-down mt-1.5"></i>
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Action</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Another Action</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Something else here</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="dropdown">
+                                <button type="button" class="btn btn-secondary dropdown-toggle">
+                                    Secondary
+                                    <i class="fas fa-angle-down mt-1.5"></i>
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Action</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Another Action</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Something else here</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="dropdown">
+                                <button type="button" class="btn btn-success dropdown-toggle">
+                                    Success
+                                    <i class="fas fa-angle-down mt-1.5"></i>
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Action</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Another Action</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Something else here</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="dropdown">
+                                <button type="button" class="btn btn-danger dropdown-toggle">
+                                    Danger
+                                    <i class="fas fa-angle-down mt-1.5"></i>
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Action</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Another Action</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Something else here</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="dropdown">
+                                <button type="button" class="btn btn-warning dropdown-toggle">
+                                    Warning
+                                    <i class="fas fa-angle-down mt-1.5"></i>
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Action</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Another Action</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Something else here</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="dropdown">
+                                <button type="button" class="btn btn-info dropdown-toggle">
+                                    Info
+                                    <i class="fas fa-angle-down mt-1.5"></i>
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Action</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Another Action</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Something else here</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="dropdown">
+                                <button type="button" class="btn btn-dark dropdown-toggle">
+                                    Dark
+                                    <i class="fas fa-angle-down mt-1.5"></i>
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Action</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Another Action</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Something else here</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-wrap items-center gap-4">
+                            <div class="dropdown">
+                                <button type="button" class="btn btn-outline-primary dropdown-toggle">
+                                    Primary
+                                    <i class="fas fa-angle-down mt-1.5"></i>
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Action</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Another Action</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Something else here</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="dropdown">
+                                <button type="button" class="btn btn-outline-secondary dropdown-toggle">
+                                    Secondary
+                                    <i class="fas fa-angle-down mt-1.5"></i>
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Action</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Another Action</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Something else here</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="dropdown">
+                                <button type="button" class="btn btn-outline-success dropdown-toggle">
+                                    Success
+                                    <i class="fas fa-angle-down mt-1.5"></i>
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Action</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Another Action</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Something else here</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="dropdown">
+                                <button type="button" class="btn btn-outline-danger dropdown-toggle">
+                                    Danger
+                                    <i class="fas fa-angle-down mt-1.5"></i>
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Action</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Another Action</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Something else here</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="dropdown">
+                                <button type="button" class="btn btn-outline-warning dropdown-toggle">
+                                    Warning
+                                    <i class="fas fa-angle-down mt-1.5"></i>
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Action</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Another Action</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Something else here</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="dropdown">
+                                <button type="button" class="btn btn-outline-info dropdown-toggle">
+                                    Info
+                                    <i class="fas fa-angle-down mt-1.5"></i>
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Action</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Another Action</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Something else here</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="dropdown">
+                                <button type="button" class="btn btn-outline-dark dropdown-toggle">
+                                    Dark
+                                    <i class="fas fa-angle-down mt-1.5"></i>
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Action</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Another Action</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Something else here</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="split-dropdown-button">
+                    <h5 class="text-2xl font-medium mb-4">Split Dropdown Button</h5>
+
+                    <div class="dropdown">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary">
+                                Split Dropdown
+                            </button>
+                            <button type="button" class="btn btn-primary px-2 dropdown-toggle">
+                                <i class="fas fa-angle-down mt-1"></i>
+                            </button>
+                        </div>
+                        
+
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">
+                                <a href="#" class="w-full">Action</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#" class="w-full">Another Action</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#" class="w-full">Something else here</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="dropdown-button-sizes">
+                    <h5 class="text-2xl font-medium mb-4">Dropdown Button Sizes</h5>
+
+                    <div class="flex flex-wrap items-center gap-4">
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-xs btn-primary dropdown-toggle">
+                                Extra Small
+                                <i class="fas fa-angle-down mt-1"></i>
+                            </button>
+
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item">
+                                    <a href="#" class="w-full">Action</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#" class="w-full">Another Action</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#" class="w-full">Something else here</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-sm btn-primary dropdown-toggle">
+                                Small
+                                <i class="fas fa-angle-down mt-1"></i>
+                            </button>
+
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item">
+                                    <a href="#" class="w-full">Action</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#" class="w-full">Another Action</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#" class="w-full">Something else here</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-primary dropdown-toggle">
+                                Medium
+                                <i class="fas fa-angle-down mt-1"></i>
+                            </button>
+
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item">
+                                    <a href="#" class="w-full">Action</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#" class="w-full">Another Action</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#" class="w-full">Something else here</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-lg btn-primary dropdown-toggle">
+                                Large
+                                <i class="fas fa-angle-down mt-1"></i>
+                            </button>
+
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item">
+                                    <a href="#" class="w-full">Action</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#" class="w-full">Another Action</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#" class="w-full">Something else here</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-xl btn-primary dropdown-toggle">
+                                Extra Large
+                                <i class="fas fa-angle-down mt-1"></i>
+                            </button>
+
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item">
+                                    <a href="#" class="w-full">Action</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#" class="w-full">Another Action</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#" class="w-full">Something else here</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dropdown-positions">
+                    <h5 class="text-2xl font-medium mb-4">Dropdown Positions</h5>
+
+                    <div class="max-w-lg space-y-6">
+                        <div class="flex flex-wrap items-center justify-between gap-8">
+                            <div class="dropdown" data-placement="top-start">
+                                <button type="button" class="btn btn-primary dropdown-toggle">
+                                    Top Start
+                                    <i class="fas fa-angle-down mt-1"></i>
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Action</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Another Action</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Something else here</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="dropdown" data-placement="top">
+                                <button type="button" class="btn btn-primary dropdown-toggle">
+                                    Top
+                                    <i class="fas fa-angle-down mt-1"></i>
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Action</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Another Action</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Something else here</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="dropdown" data-placement="top-end">
+                                <button type="button" class="btn btn-primary dropdown-toggle">
+                                    Top End
+                                    <i class="fas fa-angle-down mt-1"></i>
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Action</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Another Action</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Something else here</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-wrap items-center justify-between gap-8">
+                            <div class="dropdown" data-placement="bottom-start">
+                                <button type="button" class="btn btn-primary dropdown-toggle">
+                                    Bottom Start
+                                    <i class="fas fa-angle-down mt-1"></i>
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Action</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Another Action</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Something else here</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="dropdown" data-placement="bottom">
+                                <button type="button" class="btn btn-primary dropdown-toggle">
+                                    Bottom
+                                    <i class="fas fa-angle-down mt-1"></i>
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Action</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Another Action</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Something else here</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="dropdown" data-placement="bottom-end">
+                                <button type="button" class="btn btn-primary dropdown-toggle">
+                                    Bottom End
+                                    <i class="fas fa-angle-down mt-1"></i>
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Action</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Another Action</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="w-full">Something else here</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="custom-dropdown">
+                    <h5 class="text-2xl font-medium mb-4">Custom Dropdown</h5>
+
+                    <div class="flex flex-wrap items-center gap-12">
+                        <div class="dropdown" data-placement="bottom-end">
+                            <div class="dropdown-toggle">
+                                <img class="w-10 h-10 object-cover rounded-full" src="https://randomuser.me/api/portraits/men/44.jpg" alt="">
+                            </div>
+
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item">
+                                    <a href="#" class="w-full inline-flex items-center gap-x-3">
+                                        <i class="fas fa-user"></i>
+                                        <span>Profile</span>
+                                    </a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#" class="w-full inline-flex items-center gap-x-3">
+                                        <i class="fas fa-cogs"></i>
+                                        <span>Settings</span>
+                                    </a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <button type="button" class="w-full inline-flex items-center gap-x-3">
+                                        <i class="fas fa-sign-out"></i>
+                                        <span>Logout</span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown" data-placement="bottom-end">
+                            <div class="dropdown-toggle">
+                                <i class="fas fa-ellipsis-vertical text-xl"></i>
+                            </div>
+
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item">
+                                    <button type="button" class="w-full inline-flex items-center gap-x-3">
+                                        <i class="fas fa-copy"></i>
+                                        <span>Copy</span>
+                                    </button>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#" class="w-full inline-flex items-center gap-x-3">
+                                        <i class="fas fa-pencil"></i>
+                                        <span>Edit</span>
+                                    </a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <button type="button" class="w-full inline-flex items-center gap-x-3">
+                                        <i class="fas fa-trash"></i>
+                                        <span>Delete</span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.4.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.5.1"></script>
+    <script src="../../js/components/dropdowns.js"></script>
+</body>
+</html>

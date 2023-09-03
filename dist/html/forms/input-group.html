@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Group - Tailwind UI Elements</title>
+    <link rel="stylesheet" href="../../css/tailwind.css" />
+
+</head>
+<body>
+    <section class="py-28">
+        <div class="container">
+            <h1 class="mb-5">Forms: Input Group</h1>
+
+            <div class="flex flex-col gap-y-8 divide-y divide-slate-200">
+                <div class="basic-input-group">
+                    <h5 class="text-2xl font-medium mb-4">Basic Input Group</h5>    
+                    
+                    <div class="flex flex-col gap-y-4">
+                        <div class="form-input-group">
+                            <span class="form-input-group-text">@</span>
+                            <input class="form-input" type="text" placeholder="Username">
+                        </div>
+
+                        <div class="form-input-group">
+                            <span class="form-input-group-text">$</span>
+                            <input class="form-input" type="text" placeholder="Price">
+                        </div>
+
+                        <div class="form-input-group">
+                            <span class="form-input-group-text">$</span>
+                            <input class="form-input" type="text" placeholder="Price">
+                            <span class="form-input-group-text">.00</span>
+                        </div>
+
+                        <div class="form-input-group">
+                            <input class="form-input" type="text" placeholder="Username">
+                            <span class="form-input-group-text">@example.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-group-sizes">
+                    <h5 class="text-2xl font-medium mb-4">Input Group Sizes</h5>    
+                    
+                    <div class="flex flex-col gap-y-4">
+                        <div class="form-input-group form-input-group-sm">
+                            <span class="form-input-group-text">@</span>
+                            <input class="form-input form-input-sm" type="text" placeholder="Username">
+                        </div>
+
+                        <div class="form-input-group">
+                            <span class="form-input-group-text">@</span>
+                            <input class="form-input" type="text" placeholder="Username">
+                        </div>
+
+                        <div class="form-input-group form-input-group-lg">
+                            <span class="form-input-group-text">@</span>
+                            <input class="form-input form-input-lg" type="text" placeholder="Username">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mutiple-inputs">
+                    <h5 class="text-2xl font-medium mb-4">Mutiple Inputs</h5>    
+                    
+                    <div class="flex flex-col gap-y-4">
+                        <div class="form-input-group">
+                            <span class="form-input-group-text">First and Last name</span>
+                            <input class="form-input" type="text">
+                            <input class="form-input" type="text">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mutiple-addons">
+                    <h5 class="text-2xl font-medium mb-4">Mutiple Addons</h5>    
+                    
+                    <div class="flex flex-col gap-y-4">
+                        <div class="form-input-group">
+                            <span class="form-input-group-text">$</span>
+                            <span class="form-input-group-text">0.00</span>
+                            <input class="form-input" type="text" placeholder="Price">
+                        </div>
+                        <div class="form-input-group">
+                            <input class="form-input" type="text" placeholder="Price">
+                            <span class="form-input-group-text">$</span>
+                            <span class="form-input-group-text">0.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="button-addons">
+                    <h5 class="text-2xl font-medium mb-4">Buttons Addons</h5>    
+                    
+                    <div class="flex flex-col gap-y-4">
+                        <div class="form-input-group">
+                            <button type="button" class="btn btn-outline-primary">Button</button>
+                            <input class="form-input" type="text">
+                        </div>
+                        <div class="form-input-group">
+                            <button type="button" class="btn btn-outline-primary">Button</button>
+                            <input class="form-input" type="text">
+                        </div>
+                        <div class="form-input-group">
+                            <input class="form-input" type="text">
+                            <button type="button" class="btn btn-primary">Button</button>
+                        </div>
+                        <div class="form-input-group">
+                            <input class="form-input" type="text">
+                            <button type="button" class="btn btn-primary">Button</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="input-group-disabled">
+                    <h5 class="text-2xl font-medium mb-4">Input Group Disabled</h5>    
+                    
+                    <div class="flex flex-col gap-y-4">
+                        <div class="form-input-group disabled">
+                            <span class="form-input-group-text">@</span>
+                            <input class="form-input" type="text" placeholder="Username" disabled>
+                        </div>
+                    </div>
+                </div>               
+            </div>
+        </div>
+    </section>
+</body>
+</html>

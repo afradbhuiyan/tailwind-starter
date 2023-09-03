@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images - Tailwind UI Elements</title>
+    <link rel="stylesheet" href="../../css/tailwind.css" />
+</head>
+<body>
+
+    <section class="py-28">
+        <div class="container">
+            <h1 class="mb-5">Content: Images</h1>
+
+            <div class="flex flex-col gap-y-8 divide-y divide-slate-200">
+                <div class="responsive-image">
+                    <h5 class="text-2xl font-medium mb-4">Responsive Image</h5>    
+                    <div class="flex flex-wrap items-center gap-4">
+                        <div class="max-w-xl">
+                            <img class="img-fluid" src="https://placehold.co/1000x667/jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="thumnnail-image">
+                    <h5 class="text-2xl font-medium mb-4">Thumbnails Image</h5>    
+                    <img class="img-thumbnail" src="https://placehold.co/300x300/jpg" alt="">
+                </div>
+                <div class="aligning-images">
+                    <h5 class="text-2xl font-medium mb-4">Aligning Images</h5>    
+                    
+                    <div class="w-full md:w-3/4 flex flex-col gap-4">
+                        <img class="img-fluid mr-auto" src="https://placehold.co/200x200/jpg" alt="">
+                        <img class="img-fluid mx-auto" src="https://placehold.co/200x200/jpg" alt="">
+                        <img class="img-fluid ml-auto" src="https://placehold.co/200x200/jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

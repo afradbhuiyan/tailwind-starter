@@ -1,0 +1,43 @@
+/* Tailwind Stuffs */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ovolab-plugin {
+
+    /* Content */
+    @import './content/images';
+    @import './content/tables';
+    @import './content/typography';
+
+    /* Forms */
+    @import './forms/label';
+    @import './forms/form-group';
+    @import './forms/input';
+    @import './forms/input-group';
+    @import './forms/checkboxes';
+    @import './forms/toggle';
+    @import './forms/select';
+
+    /* Components */
+    @import './components/accordion';
+    @import './components/alerts';
+    @import './components/badge';
+    @import './components/button';
+    @import './components/card';
+    @import './components/dropdowns';
+    @import './components/list-group';
+    @import './components/modal';
+    @import './components/offcanvas';
+    @import './components/pagination';
+    @import './components/progress';
+    @import './components/spinner';
+
+    
+    /* Vendor */
+    @import './vendor/select2';
+    @import './vendor/tippy-animations';
+    @import './vendor/tippy-themes';
+
+}

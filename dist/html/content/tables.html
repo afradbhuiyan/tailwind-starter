@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables - Tailwind UI Elements</title>
+    <link rel="stylesheet" href="../../css/tailwind.css" />
+</head>
+<body class="bg-gray-100"> 
+    <section class="py-28">
+        <div class="container">
+            <h1 class="mb-5">Components: Tables</h1>
+            
+            <div class="flex flex-col gap-y-8 divide-y divide-slate-200">
+                <div class="basic-table">
+                    <h5 class="text-2xl font-medium mb-4">Basic Table</h5>
+
+                    <div class="max-w-5xl">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Product name</th>
+                                        <th>Color</th>
+                                        <th>Catagory</th>
+                                        <th>Available</th>
+                                        <th>Qty</th>
+                                        <th>Price</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>01</td>
+                                        <td>Apple MacBook 17"</td>
+                                        <td>White</td>
+                                        <td>Laptop</td>
+                                        <td>Yes</td>
+                                        <td>1</td>
+                                        <td>$2999</td>
+                                        <td>
+                                            <div class="flex items-center gap-2">
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-success">View</a>
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-primary">Edit</a>
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-danger">Delete</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>02</td>
+                                        <td>LG22MK600 21.5" Monitor</td>
+                                        <td>Black</td>
+                                        <td>Monitor</td>
+                                        <td>Yes</td>
+                                        <td>1</td>
+                                        <td>$1999</td>
+                                        <td>
+                                            <div class="flex items-center gap-2">
+                                                <a href="#" class="btn btn-sm btn-outline-success">View</a>
+                                                <a href="#" class="btn btn-sm btn-outline-primary">Edit</a>
+                                                <a href="#" class="btn btn-sm btn-outline-danger">Delete</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>03</td>
+                                        <td>Magic Mouse 2</td>
+                                        <td>Sliver</td>
+                                        <td>Accessories</td>
+                                        <td>No</td>
+                                        <td>1</td>
+                                        <td>$99</td>
+                                        <td>
+                                            <div class="flex items-center gap-2">
+                                                <a href="#" class="btn btn-sm btn-outline-success">View</a>
+                                                <a href="#" class="btn btn-sm btn-outline-primary">Edit</a>
+                                                <a href="#" class="btn btn-sm btn-outline-danger">Delete</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="striped-table">
+                    <h5 class="text-2xl font-medium mb-4">Striped Table</h5>
+                    
+                    <div class="max-w-5xl">
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Product name</th>
+                                        <th>Color</th>
+                                        <th>Catagory</th>
+                                        <th>Available</th>
+                                        <th>Qty</th>
+                                        <th>Price</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>01</td>
+                                        <td>Apple MacBook 17"</td>
+                                        <td>White</td>
+                                        <td>Laptop</td>
+                                        <td>Yes</td>
+                                        <td>1</td>
+                                        <td>$2999</td>
+                                        <td>
+                                            <div class="flex items-center gap-2">
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-success">View</a>
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-primary">Edit</a>
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-danger">Delete</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>02</td>
+                                        <td>LG22MK600 21.5" Monitor</td>
+                                        <td>Black</td>
+                                        <td>Monitor</td>
+                                        <td>Yes</td>
+                                        <td>1</td>
+                                        <td>$1999</td>
+                                        <td>
+                                            <div class="flex items-center gap-2">
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-success">View</a>
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-primary">Edit</a>
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-danger">Delete</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>03</td>
+                                        <td>Magic Mouse 2</td>
+                                        <td>Sliver</td>
+                                        <td>Accessories</td>
+                                        <td>No</td>
+                                        <td>1</td>
+                                        <td>$99</td>
+                                        <td>
+                                            <div class="flex items-center gap-2">
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-success">View</a>
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-primary">Edit</a>
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-danger">Delete</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hoverable-table-rows">
+                    <h5 class="text-2xl font-medium mb-4">Striped Table</h5>
+                    
+                    <div class="max-w-5xl">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Product name</th>
+                                        <th>Color</th>
+                                        <th>Catagory</th>
+                                        <th>Available</th>
+                                        <th>Qty</th>
+                                        <th>Price</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>01</td>
+                                        <td>Apple MacBook 17"</td>
+                                        <td>White</td>
+                                        <td>Laptop</td>
+                                        <td>Yes</td>
+                                        <td>1</td>
+                                        <td>$2999</td>
+                                        <td>
+                                            <div class="flex items-center gap-2">
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-success">View</a>
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-primary">Edit</a>
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-danger">Delete</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>02</td>
+                                        <td>LG22MK600 21.5" Monitor</td>
+                                        <td>Black</td>
+                                        <td>Monitor</td>
+                                        <td>Yes</td>
+                                        <td>1</td>
+                                        <td>$1999</td>
+                                        <td>
+                                            <div class="flex items-center gap-2">
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-success">View</a>
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-primary">Edit</a>
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-danger">Delete</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>03</td>
+                                        <td>Magic Mouse 2</td>
+                                        <td>Sliver</td>
+                                        <td>Accessories</td>
+                                        <td>No</td>
+                                        <td>1</td>
+                                        <td>$99</td>
+                                        <td>
+                                            <div class="flex items-center gap-2">
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-success">View</a>
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-primary">Edit</a>
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-danger">Delete</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bordered-table">
+                    <h5 class="text-2xl font-medium mb-4">Bordered Table</h5>
+                    
+                    <div class="max-w-5xl">
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Product name</th>
+                                        <th>Color</th>
+                                        <th>Catagory</th>
+                                        <th>Available</th>
+                                        <th>Qty</th>
+                                        <th>Price</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>01</td>
+                                        <td>Apple MacBook 17"</td>
+                                        <td>White</td>
+                                        <td>Laptop</td>
+                                        <td>Yes</td>
+                                        <td>1</td>
+                                        <td>$2999</td>
+                                        <td>
+                                            <div class="flex items-center gap-2">
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-success">View</a>
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-primary">Edit</a>
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-danger">Delete</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>02</td>
+                                        <td>LG22MK600 21.5" Monitor</td>
+                                        <td>Black</td>
+                                        <td>Monitor</td>
+                                        <td>Yes</td>
+                                        <td>1</td>
+                                        <td>$1999</td>
+                                        <td>
+                                            <div class="flex items-center gap-2">
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-success">View</a>
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-primary">Edit</a>
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-danger">Delete</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>03</td>
+                                        <td>Magic Mouse 2</td>
+                                        <td>Sliver</td>
+                                        <td>Accessories</td>
+                                        <td>No</td>
+                                        <td>1</td>
+                                        <td>$99</td>
+                                        <td>
+                                            <div class="flex items-center gap-2">
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-success">View</a>
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-primary">Edit</a>
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-danger">Delete</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="borderless-table">
+                    <h5 class="text-2xl font-medium mb-4">Borderless Table</h5>
+                    
+                    <div class="max-w-5xl">
+                        <div class="table-responsive">
+                            <table class="table table-borderless">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Product name</th>
+                                        <th>Color</th>
+                                        <th>Catagory</th>
+                                        <th>Available</th>
+                                        <th>Qty</th>
+                                        <th>Price</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>01</td>
+                                        <td>Apple MacBook 17"</td>
+                                        <td>White</td>
+                                        <td>Laptop</td>
+                                        <td>Yes</td>
+                                        <td>1</td>
+                                        <td>$2999</td>
+                                        <td>
+                                            <div class="flex items-center gap-2">
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-success">View</a>
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-primary">Edit</a>
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-danger">Delete</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>02</td>
+                                        <td>LG22MK600 21.5" Monitor</td>
+                                        <td>Black</td>
+                                        <td>Monitor</td>
+                                        <td>Yes</td>
+                                        <td>1</td>
+                                        <td>$1999</td>
+                                        <td>
+                                            <div class="flex items-center gap-2">
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-success">View</a>
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-primary">Edit</a>
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-danger">Delete</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>03</td>
+                                        <td>Magic Mouse 2</td>
+                                        <td>Sliver</td>
+                                        <td>Accessories</td>
+                                        <td>No</td>
+                                        <td>1</td>
+                                        <td>$99</td>
+                                        <td>
+                                            <div class="flex items-center gap-2">
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-success">View</a>
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-primary">Edit</a>
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-danger">Delete</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="responsive-table">
+                    <h5 class="text-2xl font-medium mb-4">Responsive Table</h5>
+    
+                    <div class="max-w-5xl">
+                        <div class="table-responsive">
+                            <table class="table whitespace-nowrap">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Product name</th>
+                                        <th>Color</th>
+                                        <th>Catagory</th>
+                                        <th>Available</th>
+                                        <th>Qty</th>
+                                        <th>Price</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>01</td>
+                                        <td>Apple MacBook 17"</td>
+                                        <td>White</td>
+                                        <td>Laptop</td>
+                                        <td>Yes</td>
+                                        <td>1</td>
+                                        <td>$2999</td>
+                                        <td>
+                                            <div class="flex items-center gap-2">
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-success">View</a>
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-primary">Edit</a>
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-danger">Delete</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>02</td>
+                                        <td>LG22MK600 21.5" Monitor</td>
+                                        <td>Black</td>
+                                        <td>Monitor</td>
+                                        <td>Yes</td>
+                                        <td>1</td>
+                                        <td>$1999</td>
+                                        <td>
+                                            <div class="flex items-center gap-2">
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-success">View</a>
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-primary">Edit</a>
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-danger">Delete</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>03</td>
+                                        <td>Magic Mouse 2</td>
+                                        <td>Sliver</td>
+                                        <td>Accessories</td>
+                                        <td>No</td>
+                                        <td>1</td>
+                                        <td>$99</td>
+                                        <td>
+                                            <div class="flex items-center gap-2">
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-success">View</a>
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-primary">Edit</a>
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-danger">Delete</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="compact-table">
+                    <h5 class="text-2xl font-medium mb-4">Compact Table</h5>
+  
+                    <div class="max-w-5xl">
+                        <div class="table-responsive">
+                            <table class="table table-compact">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Product name</th>
+                                        <th>Color</th>
+                                        <th>Catagory</th>
+                                        <th>Available</th>
+                                        <th>Qty</th>
+                                        <th>Price</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>01</td>
+                                        <td>Apple MacBook 17"</td>
+                                        <td>White</td>
+                                        <td>Laptop</td>
+                                        <td>Yes</td>
+                                        <td>1</td>
+                                        <td>$2999</td>
+                                        <td>
+                                            <div class="flex items-center gap-2">
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-success">View</a>
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-primary">Edit</a>
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-danger">Delete</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>02</td>
+                                        <td>LG22MK600 21.5" Monitor</td>
+                                        <td>Black</td>
+                                        <td>Monitor</td>
+                                        <td>Yes</td>
+                                        <td>1</td>
+                                        <td>$1999</td>
+                                        <td>
+                                            <div class="flex items-center gap-2">
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-success">View</a>
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-primary">Edit</a>
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-danger">Delete</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>03</td>
+                                        <td>Magic Mouse 2</td>
+                                        <td>Sliver</td>
+                                        <td>Accessories</td>
+                                        <td>No</td>
+                                        <td>1</td>
+                                        <td>$99</td>
+                                        <td>
+                                            <div class="flex items-center gap-2">
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-success">View</a>
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-primary">Edit</a>
+                                                <a href="#" role="button" class="btn btn-sm btn-outline-danger">Delete</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="../../js/components/collapse.js"></script>
+</body>
+</html>

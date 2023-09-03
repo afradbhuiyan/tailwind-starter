@@ -1,0 +1,93 @@
+@layer components {
+    .badge {
+        @apply inline-flex justify-center items-center gap-x-[2px] px-[0.85em] py-[0.15em] text-[0.75em] font-semibold text-white text-center whitespace-nowrap rounded-md bg-transparent border border-transparent;
+    }
+
+    .badge-pill {
+        @apply rounded-full;
+    }
+
+    .badge-primary {
+        @apply border-primary bg-primary;
+    }
+
+    .badge-secondary {
+        @apply border-secondary bg-secondary;
+    }
+
+    .badge-success {
+        @apply border-success bg-success;
+    }
+
+    .badge-danger {
+        @apply border-danger bg-danger;
+    }
+
+    .badge-warning {
+        @apply border-warning bg-warning;
+    }
+
+    .badge-info {
+        @apply border-info bg-info;
+    }
+
+    .badge-dark {
+        @apply border-dark bg-dark;
+    }
+
+    .badge-outline-primary {
+        @apply border-primary text-primary;
+    }
+    
+    .badge-outline-secondary {
+        @apply border-secondary text-secondary;
+    }
+
+    .badge-outline-success {
+        @apply border-success text-success;
+    }
+
+    .badge-outline-danger {
+        @apply border-danger text-danger;
+    }
+
+    .badge-outline-warning {
+        @apply border-warning text-warning;
+    }
+    
+    .badge-outline-info {
+        @apply border-info text-info;
+    }
+
+    .badge-outline-dark {
+        @apply border-dark text-dark;
+    }
+
+    .badge-soft-primary {
+        @apply border-primary-100 bg-primary-100 text-primary;
+    }
+
+    .badge-soft-secondary {
+        @apply border-secondary-100 bg-secondary-100 text-secondary;
+    }
+
+    .badge-soft-success {
+        @apply border-success-100 bg-success-100 text-success;
+    }
+
+    .badge-soft-danger {
+        @apply border-danger-100 bg-danger-100 text-danger;
+    }
+
+    .badge-soft-warning {
+        @apply border-warning-100 bg-warning-100 text-warning;
+    }
+
+    .badge-soft-info {
+        @apply border-info-100 bg-info-100 text-info;
+    }
+
+    .badge-soft-dark {
+        @apply border-dark-100 bg-dark-100 text-dark;
+    }
+}

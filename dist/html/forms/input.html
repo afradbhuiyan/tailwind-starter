@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input - Tailwind UI Elements</title>
+    <link rel="stylesheet" href="../../css/tailwind.css" />
+
+</head>
+<body>
+    <section class="py-28">
+        <div class="container">
+            <h1 class="mb-5">Forms: Input</h1>
+
+            <div class="flex flex-col gap-y-8 divide-y divide-slate-200">
+                <div class="basic-input">
+                    <h5 class="text-2xl font-medium mb-4">Basic Input</h5>    
+                    <input type="text" class="form-input" placeholder="Basic">
+                </div>
+
+                <div class="input-with-label">
+                    <h5 class="text-2xl font-medium mb-4">Input with label</h5>    
+
+                    <div class="form-group">
+                        <label for="" class="form-label required">Basic</label>    
+                        <input type="text" class="form-input" placeholder="Basic">
+                    </div>
+                </div>    
+                            
+                <div class="input-sizes">
+                    <h5 class="text-2xl font-medium mb-4">Input Sizes</h5>    
+
+                    <div class="flex flex-col gap-4">
+                        <input type="text" class="form-input form-input-sm"  placeholder="Small">
+                        <input type="text" class="form-input" placeholder="Default">
+                        <input type="text" class="form-input form-input-lg" placeholder="Large">
+                    </div>
+                </div>
+
+                <div class="textarea">
+                    <h5 class="text-2xl font-medium mb-4">Textarea</h5>    
+                    <textarea class="form-input" placeholder="Textarea"></textarea>
+                </div>
+
+                <div class="file-input">
+                    <h5 class="text-2xl font-medium mb-4">File Input</h5>
+                    <input type="file" class="form-input">    
+                </div>
+
+                <div class="diabled-inputs">
+                    <h5 class="text-2xl font-medium mb-4">Disabled Inputs</h5>
+
+                    <div class="flex flex-col gap-4">
+                        <input type="text" class="form-input" placeholder="Disabled Input" disabled>    
+                        <input type="file" class="form-input" disabled>    
+                        <textarea class="form-input" placeholder="Disabled Textarea" disabled></textarea>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </section>
+</body>
+</html>

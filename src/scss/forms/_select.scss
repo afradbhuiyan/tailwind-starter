@@ -1,0 +1,23 @@
+@layer components {
+    .form-select {
+        @apply w-full rounded border border-slate-300 bg-transparent px-4 py-2 text-base text-slate-700 focus:ring-1 focus:border-primary-500 focus:ring-primary-500 disabled:pointer-events-none disabled:opacity-60 disabled:bg-slate-100 disabled:text-slate-400;
+    }
+
+    .form-select option,
+    .form-select optgroup {
+        @apply bg-white text-slate-700;
+    }
+    
+    .form-select option[disabled],
+    .form-select optgroup[disabled] {
+        @apply bg-slate-100 text-slate-400;
+    }
+    
+    .form-select-sm {
+        @apply px-4 py-1.5 text-sm;
+    }
+
+    .form-select-lg {
+        @apply px-6 py-3 text-lg;
+    }
+}

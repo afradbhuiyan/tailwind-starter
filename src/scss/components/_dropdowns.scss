@@ -1,0 +1,21 @@
+@layer components {
+    .dropdown {
+      @apply relative;
+    }
+
+    .dropdown-toggle {
+        @apply cursor-pointer whitespace-nowrap;
+    }
+  
+    .dropdown-menu {
+        @apply max-w-max fixed top-0 left-0 z-20 hidden flex-col overflow-hidden rounded shadow-lg border border-slate-200 bg-white;
+    }
+
+    .dropdown-menu.show {
+        @apply flex;
+    }
+
+    .dropdown-item {
+        @apply w-full inline-flex items-center gap-2 px-4 py-2 cursor-pointer text-base text-slate-700 hover:bg-slate-100;
+    }
+}

@@ -1,0 +1,49 @@
+@layer components {
+    .spinner {
+        @apply w-10 h-10 inline-block rounded-full animate-spin border-4 border-slate-200 border-l-slate-600 border-t-slate-600;
+    }
+
+    .spinner-xs {
+        @apply w-6 h-6;
+    }
+
+    .spinner-sm {
+        @apply w-8 h-8;
+    }
+
+    .spinner-lg {
+        @apply w-12 h-12;
+    }
+
+    .spinner-xl {
+        @apply w-14 h-14;
+    }
+
+    .spinner-primary {
+        @apply border-primary-200 border-l-primary border-t-primary;
+    }
+
+    .spinner-secondary {
+        @apply border-secondary-200 border-l-secondary border-t-secondary;
+    }
+
+    .spinner-success {
+        @apply border-success-200 border-l-success border-t-success;
+    }
+
+    .spinner-danger {
+        @apply border-danger-200 border-l-danger border-t-danger;
+    }
+
+    .spinner-warning {
+        @apply border-warning-200 border-l-warning border-t-warning;
+    }
+
+    .spinner-info {
+        @apply border-info-200 border-l-info border-t-info;
+    }
+
+    .spinner-dark {
+        @apply border-dark-200 border-l-dark border-t-dark;
+    }
+}

@@ -1,0 +1,38 @@
+@layer components {
+    .form-input-group {
+        @apply w-full relative flex;   
+    }
+
+    .form-input-group-text {
+        @apply inline-flex items-center gap-2 px-2.5 whitespace-nowrap rounded  border border-slate-300 bg-slate-100/50 text-base text-slate-500;
+    }
+
+    .form-input-group > .form-input,
+    .form-input-group > .form-select {
+        @apply relative w-[1%] min-w-0 shrink flex-grow basis-auto;
+    }
+
+    .form-input-group  .btn {
+        @apply relative z-10;
+    }
+    
+    .form-input-group > :not(:first-child) {
+        @apply ml-[-1px] rounded-tl-none rounded-bl-none;
+    }
+
+    .form-input-group > :not(:last-child) {
+      @apply rounded-tr-none rounded-br-none;
+    }
+    
+    .form-input-group.disabled .form-input-group-text {
+        @apply pointer-events-none opacity-50;
+    }
+
+    .form-input-group-sm .form-input-group-text {
+        @apply text-sm;
+    }
+
+    .form-input-group-lg .form-input-group-text {
+        @apply text-lg;
+    }
+}

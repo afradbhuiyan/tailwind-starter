@@ -1,0 +1,46 @@
+@layer components {
+    .card {
+        @apply relative flex flex-col min-h-0 bg-white border border-slate-200 rounded;
+    }
+    
+    .card-img {
+        @apply w-full;
+    }
+    
+    .card-img-top {
+        @apply rounded-tl rounded-tr; 
+    }
+    
+    .card-img-bottom {
+        @apply rounded-bl rounded-br; 
+    }
+    
+    .card-title {
+        @apply mb-2;
+    }
+    
+    .card-subtitle {
+        @apply -mt-1;
+    }
+    
+    .card-text {
+        @apply text-dark;
+    }
+    
+    .card-link {
+        @apply font-medium text-primary transition-colors duration-150 ease-in-out underline hover:text-primary-700 focus:text-primary-700;
+    }
+    
+    .card-header {
+        @apply py-2 px-4 mb-0 text-dark bg-gray-300/40 border-b border-b-slate-200;
+    }
+    
+    .card-body {
+        @apply p-4 text-dark;
+    }
+    
+    .card-footer {
+        @apply py-2 px-4 mb-0 text-dark bg-gray-300/40 border-t border-t-slate-200;
+    }
+
+}

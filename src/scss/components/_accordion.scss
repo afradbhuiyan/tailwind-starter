@@ -1,0 +1,38 @@
+@layer components {
+    .accordion {
+      @apply w-full rounded divide-y divide-slate-200 border border-slate-200 bg-white;
+    }
+
+    .accordion-button {
+        @apply w-full text-left inline-flex items-center py-4 px-5 text-base transition-colors duration-150 ease-in-out focus:outline-none;
+    }
+
+    .accordion-button::after {
+        font-family: 'Font Awesome 5 Free';
+        @apply content-['\f078'] inline-block ml-auto;
+    }
+
+    .accordion-collapse {
+        @apply overflow-hidden transition-all ease-in-out;
+    }
+
+    .accordion-body {
+        @apply px-4 py-3 text-sm text-slate-700;
+    }
+
+    .accordion-item.show .accordion-button {
+        @apply bg-primary-100 text-primary;
+    }
+
+    .accordion-item.show .accordion-button::after {
+        @apply content-['\f077']
+    }
+
+    .accordion-item.js-enabled .accordion-body {
+        @apply invisible;
+    }
+
+    .accordion-item.show .accordion-body {
+        @apply visible;
+    }
+}

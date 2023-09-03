@@ -1,0 +1,86 @@
+@layer components {
+    .pagination {
+        @apply flex flex-wrap items-center gap-4 border border-transparent;
+    }
+
+    .page-link {
+        @apply inline-flex items-center justify-center shrink-0 rounded border border-slate-200 bg-white text-base font-medium text-slate-600 transition-colors duration-150;
+    }
+
+    .page-link:not(.page-link-dots) {
+        @apply hover:bg-slate-100 hover:text-slate-700;
+    }
+
+    .page-link:not(.page-link-text, .page-link-dots) {
+        @apply h-9 w-9;
+    }
+
+    .page-link-text {
+        @apply h-9 w-auto px-3;
+    }
+
+    .page-link-dots {
+        @apply tracking-widest bg-transparent border-transparent hover:bg-transparent;
+    }
+
+    .pagination-sm .page-link:not(.page-link-text, .page-link-dots)  {
+        @apply h-7 w-7 text-sm;
+    }
+
+    .pagination-sm .page-link-text {
+        @apply h-7 w-auto px-2;
+    }
+
+    .pagination-lg .page-link:not(.page-link-text, .page-link-dots)  {
+        @apply h-11 w-11 text-lg;
+    }
+
+    .pagination-lg .page-link-text {
+        @apply h-11 w-auto px-4;
+    }
+
+    .pagination-square .page-link {
+        @apply rounded-none;
+    }
+
+    .pagination-circle .page-link {
+        @apply rounded-full;
+    }
+
+    .page-item.active .page-link {
+        @apply bg-primary-500 border-primary-500 text-white;
+    }
+
+    .pagination-primary .page-item.active .page-link {
+        @apply bg-primary-500 border-primary-500 text-white;
+    }
+
+    .pagination-secondary .page-item.active .page-link {
+        @apply bg-secondary-500 border-secondary-500 text-white;
+    }
+    
+    .pagination-success .page-item.active .page-link {
+        @apply bg-success-500 border-success-500 text-white;
+    }
+
+    .pagination-warning .page-item.active .page-link {
+        @apply bg-warning-500 border-warning-500 text-white;
+    }
+
+    .pagination-danger .page-item.active .page-link {
+        @apply bg-danger-500 border-danger-500 text-white;
+    }
+
+    .pagination-info .page-item.active .page-link {
+        @apply bg-info-500 border-info-500 text-white;
+    }
+
+    .pagination-dark .page-item.active .page-link {
+        @apply bg-dark-500 border-dark-500 text-white;
+    }
+
+    .page-item.disabled .page-link {
+        @apply pointer-events-none bg-slate-200 text-slate-400 opacity-60;
+    }
+
+}

@@ -1,0 +1,102 @@
+@layer components {
+    .btn {
+        @apply border inline-flex items-center justify-center gap-2 rounded py-2 px-4  font-normal text-base text-white transition-all duration-150 disabled:pointer-events-none disabled:opacity-60 outline-none;
+    }
+
+    .btn-primary {
+        @apply bg-primary border-primary hover:bg-primary-700 hover:border-primary focus:bg-primary-700 focus:border-primary;
+    }
+    
+    .btn-secondary {
+        @apply bg-secondary border-secondary hover:bg-secondary-700 hover:border-secondary focus:bg-secondary-700 focus:border-secondary;
+    }
+    
+    .btn-success {
+        @apply bg-success border-success hover:bg-success-700 hover:border-success focus:bg-success-700 focus:border-success;
+    }
+    
+    .btn-danger {
+        @apply bg-danger border-danger hover:bg-danger-700 hover:border-danger focus:bg-danger-700 focus:border-danger;
+    }
+    
+    .btn-info {
+        @apply bg-info border-info hover:bg-info-700 hover:border-info  focus:bg-info-700 focus:border-info;
+    }
+
+    .btn-warning {
+        @apply text-dark bg-warning border-warning hover:bg-warning-600 hover:border-warning-600 focus:bg-warning-600 focus:border-warning-600;
+    }
+
+    .btn-dark {
+        @apply bg-dark border-dark hover:bg-dark-900 hover:border-dark-900 focus:bg-dark-900 focus:border-dark-900;
+    }
+
+    .btn-outline-primary {
+        @apply border-primary text-primary hover:bg-primary hover:text-white focus:bg-primary focus:text-white;
+    }
+
+    .btn-outline-secondary {
+        @apply border-secondary text-secondary hover:bg-secondary hover:text-white focus:bg-secondary focus:text-white;
+    }
+
+    .btn-outline-success {
+        @apply border-success text-success hover:bg-success hover:text-white focus:bg-success focus:text-white;
+    }
+
+    .btn-outline-danger {
+        @apply border-danger text-danger hover:bg-danger hover:text-white focus:bg-danger focus:text-white;
+    }
+
+    .btn-outline-info {
+        @apply border-info text-info hover:bg-info hover:text-white focus:bg-info focus:text-white;
+    }
+
+    .btn-outline-warning {
+        @apply border-warning text-warning hover:bg-warning hover:text-white focus:bg-warning focus:text-white;
+    }
+
+    .btn-outline-dark {
+        @apply border-dark text-dark hover:bg-dark hover:text-white focus:bg-dark focus:text-white;
+    }
+    
+    .btn-xs {
+        @apply px-2 py-1 text-xs;
+    }
+
+    .btn-sm {
+        @apply px-3 py-1.5 text-sm;
+    }
+
+    .btn-lg {
+        @apply px-4 py-2 text-lg;
+    }
+
+    .btn-xl {
+        @apply px-5 py-2.5 text-xl;
+    }
+
+
+    .btn-group {
+        @apply inline-flex rounded;
+    }
+
+    .btn-group .btn {
+        @apply rounded-none;
+    }
+
+    .btn-group .btn:first-child {
+        @apply rounded-l;
+    }
+
+    .btn-group .btn:last-child {
+        @apply rounded-r border-l-0;
+    }
+
+    .btn-group .btn:not(:first-child):not(:last-child) {
+        @apply border-l-0;
+    }
+    
+    .btn-close {
+        @apply text-[1em] p-[.25em] text-black bg-transparent border-0 rounded opacity-50 hover:opacity-75 focus:opacity-75;
+    }
+}
